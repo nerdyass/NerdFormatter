@@ -1,9 +1,10 @@
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const readline = require('readline-sync');
 const gradient = require('gradient-string');
 
-//Make sure to specify the file path, by default it saves to the desktop.
+// Make sure to specify the file path, by default, it saves to the desktop.
 const filepath = path.join(os.homedir(), 'Desktop');
 
 const getInput = (prompt) => {
@@ -65,5 +66,4 @@ while (continueImporting) {
 }
 
 console.log(gradient.vice('> Exiting...'));
-setTimeout(() => {
-}, 5000);
+setTimeout(() => {}, 5000);
