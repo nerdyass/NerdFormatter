@@ -66,4 +66,4 @@ while (continueImporting) {
 }
 
 console.log(gradient.vice('> Exiting...'));
-setTimeout(() => {}, 5000);
+setTimeout(() => {}, 2000);
