@@ -7,12 +7,10 @@ const gradient = require('gradient-string');
 // Save files to Desktop by default
 const filepath = path.join(os.homedir(), 'Desktop');
 
-// Gradient for the logo title (soft pink to purple)
 const titleGradient = gradient(['#ff9de2', '#9d91ff']);
-// Solid soft pink ANSI for prompts
+
 const promptColor = (text) => `\x1b[38;2;255;157;226m${text}\x1b[0m`;
 
-// Centered and underlined "Nerd Formatter" logo
 const printTitle = () => {
   const title = 'Nerd Formatter';
   const cols = process.stdout.columns || 80;
